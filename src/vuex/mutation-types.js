@@ -1,0 +1,13 @@
+export const RECEIVE_ADDRESS = 'receive_address'
+export const RECEIVE_CATEGORIES = 'receive_categories'
+export const RECEIVE_SHOPS = 'receive_shops'
+export const RECEIVE_USER = 'receive_user'
+export const RECEIVE_TOKEN = 'receive_token'
+export const RESET_USER = 'reset_user'
+export const RESET_TOKEN = 'reset_token'
+export const ADD_FOOD_COUNT = 'add_food_count'
+export const RED_FOOD_COUNT = 'red_food_count'
+export const CLEAR_CART = 'clear_cart'
+export const RECEIVE_SHOP = 'receive_shop'
+export const RECEIVE_RATINGS = 'receive_ratings'
+

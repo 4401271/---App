@@ -1,0 +1,6 @@
+/*
+* 根mutation
+* */
+export default {
+
+}
