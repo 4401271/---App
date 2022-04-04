@@ -262,7 +262,7 @@ export default {
                     float right
                     color #ddd
                 &.on
-                  background #02a774
+                  background #FFD000
                 >.switch_circle
                   //transform translateX(27px)
                   position absolute

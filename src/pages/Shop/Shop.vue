@@ -40,8 +40,8 @@ export default {
   beforeDestroy() {
     // shop: {id}是一个多层解构赋值，this中的shop表示shop模块，里面包含了和shop有关的state、mutations、actions，我们先从shop中取得shop状态和cartFoods状态
     // shop=1这个就表示赋默认值，就是假如shop模块中没有shop这个状态，那就给这个shop状态赋值为1
-    // const { shop: {id}, cartFoods } = this.shop
-    // saveCartFoods(id, cartFoods)
+    const { shop: {id}, cartFoods } = this.shop
+    saveCartFoods(id, cartFoods)
   },
   components: {
     ShopHeader

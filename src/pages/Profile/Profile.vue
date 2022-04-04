@@ -3,12 +3,12 @@
   <section class="profile">
     <Header title="个人信息"></Header>
     <section class="profile-number">
-      <a href="javascript:" class="profile-link">
+      <router-link :to="user._id ? '/userinfo' : '/login'" class="profile-link">
         <div class="profile_image">
           <i class="iconfont icongeren2"></i>
         </div>
         <div class="user-info">
-          <p class="user-info-top" @click="$router.push(user._id ? '/userinfo' : '/login')" v-if="!user.phone">{{user.name ? user.name : '登录|注册'}}</p>
+          <p class="user-info-top" v-if="!user.phone">{{user.name ? user.name : '登录|注册'}}</p>
           <p class="user-number">
             <span class="user-icon">
               <i class="iconfont iconshouji"></i>
@@ -17,9 +17,9 @@
           </p>
         </div>
         <span class="arrow">
-            <i class="iconfont iconjiantou3" @click="$router.push(user._id ? '/userinfo' : '/login')"></i>
+          <i class="iconfont iconjiantou3"></i>
         </span>
-      </a>
+      </router-link>
     </section>
     <section class="profile_info_data border-1px">
       <ul class="info_data_list">
